@@ -23,7 +23,7 @@
 .lightmode-fixed-top {
     display: none;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
 }
 @media screen and (max-width: 1024px) {
     .lightmode-fixed {
