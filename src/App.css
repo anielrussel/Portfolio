@@ -1,0 +1,37 @@
+.lightmode-fixed {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    right: 0;
+}
+.lightmode {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 12px 12px 12px 12px;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-color: var(--maroon);
+}
+#light {
+    background: white;
+}
+#dark {
+    background: var(--dim-gray);
+}
+.lightmode-fixed-top {
+    display: none;
+    position: fixed;
+    z-index: 2;
+}
+@media screen and (max-width: 1024px) {
+    .lightmode-fixed {
+        display: none;
+    }
+    .lightmode-fixed-top {
+        display: block;
+        right: 3.5rem;
+        top: 1.2rem;
+    }
+}

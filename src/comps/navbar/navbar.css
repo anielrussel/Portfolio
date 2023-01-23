@@ -1,0 +1,113 @@
+.navbar-fixed {
+    position: fixed;
+    left: 0;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--maroon);
+    padding: 10rem 8rem 10rem 3rem;
+    text-align: left;
+    gap: 4rem;
+}
+.navbar-logo h1 {
+    font-size: 40px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 5px;
+}
+.navbar-logo span {
+  color: var(--dim-gray);
+}
+.navbar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.navbar-links a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: var(--gray-p);
+}
+.navbar-links a:hover {
+    scale: 1;
+    color: white;
+    letter-spacing: 4px;
+    transition: .4s ease-out;
+    text-shadow: #FFFF 1px 0 10px;
+}
+.actives {
+    scale: 1.05;
+    text-shadow: #FFFF 1px 0 10px;
+}
+.navbar-button a {
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    background-color: white;
+    border: none;
+    color: black;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+@-webkit-keyframes hvr-ripple-out {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      opacity: 0;
+    }
+  }
+  @keyframes hvr-ripple-out {
+    100% {
+      top: -12px;
+      right: -12px;
+      bottom: -12px;
+      left: -12px;
+      opacity: 0;
+    }
+  }
+  .hvr-ripple-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+  .hvr-ripple-out:before {
+    content: '';
+    position: absolute;
+    border: white solid 6px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-animation-duration: 0.9s;
+    animation-iteration-count: infinite;
+    animation-duration: .9s;
+  }
+  .hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+    -webkit-animation-name: hvr-ripple-out;
+    animation-name: hvr-ripple-out;
+  }
+  
+.navbar-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    color: var(--gray-p);
+    font-style: italic;
+}
+@media screen and (max-width: 1024px) {
+    .navbar-fixed {
+        display: none;
+    }
+}

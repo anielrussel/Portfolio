@@ -1,0 +1,7 @@
+export { default as Navbar } from '../comps/navbar/Navbar'
+export { default as NavbarTop } from '../comps/navbartop/NavbarTop'
+export { default as Home } from '../comps/home/Home'
+export { default as About } from '../comps/about/About'
+export { default as Projects } from '../comps/projects/Projects'
+export { default as Contact } from '../comps/contact/Contact'
+export { default as Uidb } from '../comps/modals/Uidb'

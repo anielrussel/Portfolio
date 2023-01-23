@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+  --font-family: 'Lato', sans-serif;
+  --maroon: #800000;
+  --dim-gray: #202020;
+  --gray: #3d3c3c;
+  --gray-p: #C8C8C8;
+}
+body {
+  background-color: var(--dim-gray);
+  font-family: var(--font-family);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

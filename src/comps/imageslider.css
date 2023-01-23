@@ -1,0 +1,24 @@
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+    width: 70%;
+}
+.left-arrow {
+    position: fixed;
+    left: 1rem;
+    top: 25rem;
+}
+.right-arrow {
+    position: fixed;
+    right: 1rem;
+    top: 25rem;
+}
+@media screen and (max-width: 768px) {
+    .left-arrow,
+    .right-arrow {
+        top: 20rem;
+    }
+}

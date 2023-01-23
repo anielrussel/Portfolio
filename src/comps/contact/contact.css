@@ -1,0 +1,92 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem 0 5rem 0;
+  gap: 2rem;
+}
+.contact-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 5rem 10rem 0 30rem;
+}
+.contact-title p {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--gray-p);
+  background-color: var(--gray);
+  padding: 12px;
+}
+#light .contact-title p {
+  background-color: var(--gray-p);
+  color: var(--dim-gray);
+}
+.contact-title h1 {
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+}
+#light .contact-title h1 {
+  color: var(--dim-gray);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem 15rem 0 30rem;
+}
+form input {
+    font-size: 16px;
+    padding: 1rem;
+}
+form textarea {
+    height: 18rem;
+    font-size: 16px;
+    padding: 1rem;
+}
+::placeholder {
+    font-style: italic;
+}
+form button {
+    width: 12rem;
+    text-decoration: none;
+    padding: 1rem 2.5rem;
+    background-color: white;
+    border: none;
+    color: black;
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+#light form button {
+  background-color: var(--dim-gray);
+  color: white;
+}
+form button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+#light form button:hover {
+  background-color: transparent;
+  border: 2px solid var(--dim-gray);
+  color: var(--dim-gray);
+}
+@media screen and (max-width: 1024px) {
+    .contact-title {
+        padding: 5rem 1.5rem 0 1.5rem;
+    }
+    form {
+        padding: 1rem 1.5rem 0 1.5rem;
+    }
+    form button {
+        width: 12rem;
+    }
+}

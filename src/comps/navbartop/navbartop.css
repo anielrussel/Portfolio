@@ -1,0 +1,89 @@
+.navbartop-fixed {
+  position: fixed;
+  top: 0;
+  display: none;
+  width: 100%;
+  z-index: 2;
+}
+.navbartop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: var(--gray);
+}
+.navbartop-logo h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 5px;
+}
+.navbartop-logo span {
+  color: var(--maroon);
+}
+.navbar-toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbartop-menu-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.navbartop-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--maroon);
+  padding: 10rem 8rem 10rem 3rem;
+  text-align: left;
+  gap: 4rem;
+}
+.navbartop-menu-logo h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 5px;
+}
+.navbartop-menu-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.navbartop-menu-links a {
+  text-decoration: none;
+  color: var(--gray-p);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.navbartop-menu button {
+  padding: 1rem 2.5rem;
+  background-color: white;
+  border: none;
+  color: black;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.navbartop-menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+  color: var(--gray-p);
+  font-style: italic;
+}
+@media screen and (max-width: 1024px) {
+  .navbartop-fixed {
+    display: block;
+  }
+}
+@media screen and (max-width: 425px) {
+  .navbartop-menu {
+    padding: 10rem 2rem 10rem 3rem;
+  }
+}
