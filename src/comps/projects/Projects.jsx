@@ -93,7 +93,6 @@ const Projects = () => {
           I'm also taking coding challenges in Frontend Mentor, you can visit my
           profile and see some of my works. &nbsp;&nbsp;
           <a
-            style={{ color: "white" }}
             target="_blank"
             href="https://www.frontendmentor.io/profile/anielrussel"
           >

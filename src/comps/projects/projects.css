@@ -109,6 +109,13 @@
   font-size: 20px;
   padding: 1rem 10rem 0 30rem;
 }
+.projects-mentor a {
+  color: white;
+}
+#light .projects-mentor p,
+#light .projects-mentor a {
+  color: var(--dim-gray);
+}
 @media screen and (max-width: 1024px) {
   .projects-title {
     padding: 8rem 1.5rem 0 1.5rem;
